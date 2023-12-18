@@ -1,0 +1,110 @@
+nav i {
+    color:#ffffff;
+    font-size: 1.4rem;
+}
+
+body {
+    color: #58595B;
+}
+
+#employees .wrapper {     /* this is a duplicate style from policyHolders.css */
+    margin: 150px auto 100px auto;
+    background-color: #fff;
+    padding: 50px;
+    max-width: 1200px;
+    box-shadow: 0px 3px 21px #00000012;
+}
+
+#employees h3 {
+    font-weight: bold;
+    font-size: 35px;
+    margin-bottom: 30px;
+}
+
+.employee-info {
+    margin-bottom: 50px;
+    font-size: 22px;
+    line-height: 40px;
+}
+
+.employee-photos {
+    float: right;
+    margin-left: 25px;
+}
+
+.employee-photos img {
+    width: 450px;
+}
+
+.employee-photos .btns {
+    height: 70px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding-top: 20px;
+}
+
+.btns .left,
+.btns .right {
+    width: 50px;
+    height: 50px;
+    background-color: #fff;
+    border-radius: 50%;
+    box-shadow: 0px 1px 8px 0px rgba(0, 0, 0, 0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    color: #f52424;
+    transition: all 0.3s ease;
+}
+
+.btns .left:hover,
+.btns .right:hover {
+    background-color: #f52424;
+    color:#fff;
+}
+
+.jobs {
+    display: flex;
+    gap: 40px;
+}
+
+.job {
+    color: #fff;
+    background-color: #f52424;
+    padding: 30px;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 34%;
+}
+
+h4 {
+    font-size: 1.7rem;
+    margin-bottom: 15px;
+}
+
+.job > p {
+    line-height: 30px;
+    font-size: 21px;
+    font-weight: 400;
+}
+
+.details-btn {
+    color:black;
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.details-btn i {
+    font-size: 1rem;
+    position: relative;
+    top: 1px;
+}

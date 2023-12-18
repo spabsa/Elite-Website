@@ -1,0 +1,21 @@
+nav i {
+    color:#ffffff;
+    font-size: 1.4rem;
+}
+
+#carriers .wrapper {     /* this is a duplicate style from policyHolders.css */
+    margin: 150px auto 100px auto;
+    background-color: #fff;
+    padding: 50px;
+    max-width: 1200px;
+    box-shadow: 0px 3px 21px #00000012;
+}
+
+#carriers p {
+    font-size: 1.5rem;
+    line-height: 40px;
+}
+
+#carriers form textarea {
+    width: 100%;
+}

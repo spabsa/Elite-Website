@@ -1,0 +1,738 @@
+*, *:before, *:after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* outline: 1px solid red; */
+}
+
+html, body {
+    font-family: 'Roboto Slab', sans-serif;
+    width: 100%;
+    height: 100%;
+}
+
+.pages-body {
+    background-repeat: no-repeat;
+    background-image: linear-gradient(#f52424 457px, #ffffff 457px);
+}
+
+.pages-body header i,
+.pages-body ul li {
+    color: #fff;
+}
+
+.fa-box:hover {
+    cursor: pointer;
+}
+
+h2 {
+    font-size: 58px;
+    line-height: 70px;
+    padding-bottom: 22px;
+    margin-bottom: 30px;
+    position: relative;
+    font-weight: bold;
+}
+
+nav > .wrapper {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    margin-top: 30px;
+}
+
+ul {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+li > a,
+li {    /* once all the <a> tags are added. Remove the 'li' property-name */
+    font-weight: 600;
+    font-size: 18px;
+    margin: 0 7px;
+    transition: all 0.3s ease;
+    color: #fff;
+}
+
+nav i {
+    color:#f52424;
+    font-size: 1.4rem;
+}
+
+li:hover {
+    color: #f52424;
+    cursor: pointer;
+}
+
+.phone {
+    margin-right: -20px;
+    margin-left: 20px;
+}
+
+.fa-box {
+    font-size: 4rem;
+    color: #f52424;
+}
+
+.wrapper {
+    margin: 0 auto;
+    max-width: 1240px; /* play with this and figure out the effect */
+}
+
+#hero {
+    outline: 1px solid blue;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.back-video {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+#hero > .wrapper,
+#motivation h2 {
+    width: 1240px;
+}
+
+#hero h1 {
+    font-size: 78px;
+    line-height: 100px;
+    color: #fff;
+}
+
+#hero i {
+    color: #fff;
+    font-size: 2.5rem;
+    margin-top: 50px;
+    animation: figit infinite  delay iteration-count direction fill-mode;
+}
+
+.dynamic-output {
+    color: #f52424;
+    font-weight: 600;
+}
+
+.cursor {
+    transition: all 1s ease;
+    animation-duration: 0.75s;
+    animation-iteration-count: infinite;
+    animation-name: flash;
+}
+
+@keyframes flash {
+    from { opacity: 1;}
+    to {opacity: 0;}
+}
+
+.getPO-Btn {
+    background-color: #f52424;
+    font-size: 18px;
+    padding: 15px 35px;
+    display: inline-block;
+    color: #fff;
+    font-weight: 600;
+    margin-top: 16px;
+    transition: all 0.3s ease;
+
+}
+
+.getPO-Btn:hover {
+    background-color: #58595B;
+    cursor: pointer;
+}
+
+#services {
+    position: relative;
+    text-align: center;
+    padding: 100px 0;
+}
+
+#services > h2, 
+#expertise h2, 
+#expertise p,
+#motivation h2,
+#road-map h2,
+#reviews h2,
+#policyHolders h2,
+#contractors .top-h2,
+#contractors .bottom-h2,
+#carriers h2,
+#employees h2  {
+    color: #58595B;
+}
+
+
+#services h2:after,
+#reviews h2:after,
+#contractors .bottom-h2:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 116px;
+    background: #f52424;
+    height: 4px;
+    bottom: 0;
+}
+
+#services > .wrapper {
+    display: grid;
+    row-gap: 80px;
+    column-gap: 30px;
+    grid-template-columns: 1fr 1fr;
+}
+
+.service {
+    text-align: left;
+    width: auto;
+    height: 230px;
+    box-shadow: 0px 3px 33px #0000000D;
+    padding: 20px;
+    position: relative;
+    cursor: pointer;
+}
+
+.service > h3 {
+    font-weight: bold;
+    line-height: 32px;
+    font-size: 30px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+.service > p {
+    font-size: 18px;
+    line-height: 28px;
+    overflow: hidden;
+    color: #58595B;
+}
+
+.poly {
+    clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+    width: 90px;
+    height: 80px;
+    background-color: #f52424;
+    position: absolute;
+    bottom: -40px;
+    right: 20px;
+    transition: all 0.25s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.25s ease;
+}
+
+.poly i {
+    color: #fff;
+    font-size: 1.8rem;
+    transition: all 0.25s ease;
+}
+
+.service:hover > .poly,
+.service:hover > .poly i {
+    transform: scale(1.1);
+}
+
+.service:hover > h3 {
+    color: #f52424;
+}
+
+#licenses {
+    background-color: #f52424;
+    width: 100%;
+    height: auto;
+    padding: 80px 0;
+}
+
+#licenses h2 {
+    color: #fff;
+    position: relative;
+}
+
+#licenses h2:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    margin: 0 auto;
+    width: 116px;
+    background: #fff;
+    bottom: 0;
+    height: 4px;
+}
+
+#licenses ul {
+     display: grid;
+     grid-template-columns: 1fr 1fr;
+}
+
+#licenses li {
+    position: relative;
+    padding: 15px 0px 15px 40px;
+    color: #202020;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 10px;
+}
+
+#licenses li:after {
+    background: url(https://packoutco.com/wp-content/themes/packoutco/assets/images/licenses.svg);
+    position: absolute;
+    content: "";
+    left: -7px;
+    top: 11px;
+    width: 29px;
+    height: 32px;
+}
+
+#locations {
+    background: url(https://packoutco.com/wp-content/themes/packoutco/assets/images/services-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+}
+
+#locations > .wrapper {
+    display: flex;
+}
+
+.col {
+    width: 50%;
+    padding: 160px 0;
+}
+
+.left > h2,
+#contact h2 {
+    color: #fff;
+}
+
+.left > h2:after, 
+#expertise h2:after,
+#motivation h2:after,
+#road-map h2:after,
+#contact h2:after,
+#policyHolders h2:after,
+#contractors h2:after,
+#carriers h2:after,
+#employees h2:after  {
+    content: "";
+    position: absolute;
+    left: 0;
+    margin: 0 auto;
+    width: 116px;
+    background: #f52424;
+    bottom: 0;
+    height: 4px;
+}
+
+.left > p {
+    color: #fff;
+    font-size: 25px;
+    max-width: 450px;
+    line-height: 36px;
+}
+
+#expertise {
+    padding: 100px 0;
+    background: #FAFAFA
+}
+
+#expertise .card-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 30px;
+}
+
+#expertise .card {
+    background-color: #fff;
+    padding: 40px;
+    box-shadow: 0px 3px 33px #0000000D;
+}
+
+#expertise h3 {
+    color: #202020;
+    font-size: 25px;
+    margin-bottom: 15px;
+    line-height: 33px;
+    font-weight: bold;
+}
+
+#motivation {
+    background: url(https://packoutco.com/wp-content/uploads/2021/06/Why_we_do_it___reference.png) no-repeat right top;
+    background-size: contain;
+    height: 600px;
+    display: flex;
+    align-items: center;
+}
+
+#motivation p {
+    font-size: 25px;
+    line-height: 37px;
+    max-width: 450px;
+}
+
+#road-map {
+    padding: 100px 0;
+}
+
+#road-map .row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#left {
+    max-width: 41.666667%;
+}
+
+#right > img {
+    display: block;
+     margin-left: auto; /*play around with this property to find effect */
+}
+
+#road-map p {
+    font-size: 25px;
+    line-height: 37px;
+    color: #58595B;
+}
+
+#road-map .btn {
+    background: #f52424;
+    color: #fff;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 600;
+    display: inline-block;
+    border: none;
+    padding: 18px 35px;
+    margin-top: 1.5rem;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+#road-map .btn:hover {
+    background: #58595B;
+}
+
+#reviews {
+    position: relative;
+    padding: 60px 0 40px 0;
+    background: linear-gradient(#FAFAFA 68%, #fff 32%);
+}
+
+#reviews .reviews-wrapper {
+    overflow: hidden;
+    text-align: center;
+    position: relative;
+}
+
+#reviews .reviews {
+    display: flex;
+    width: 2527px;
+    justify-content: space-between;
+}
+
+#reviews .review {
+    border: 1px solid #E7E7E7;
+    background: #fff;
+    text-align: center;
+    padding: 15px;
+    transition: all ease 0.3s;
+    width: 383.333px;
+}
+
+
+#reviews h3 {
+    margin-top: 10px;
+    color: #58595B;
+    font-weight: 600;
+    font-size: 18px;
+    margin-bottom: 0px;
+}
+
+#reviews .stars {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+    gap: 0;
+}
+
+#reviews .stars > li{
+    margin: 0;
+}
+
+.fa-star {
+    color: #f52424;
+}
+
+#reviews a {
+    display: inline-block;
+    color: #f52424;
+    margin-top: 12px;
+    text-decoration: underline;
+}
+
+#reviews .origin {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.nav-left,
+.nav-right {
+    width: 75px;
+    height: 75px;
+    background-color: #f52424;
+    transition: all 0.1s ease;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:#E7E7E7;
+    font-size: 1.3rem;
+    position: absolute;
+    top: 30%;
+}
+
+.nav-left:hover,
+.nav-right:hover {
+    cursor: pointer;
+    font-size: 1.6rem;
+    color: #fff;
+    transform: scale(1.1);
+}
+
+.nav-right {
+    right: 12%;
+}
+
+.nav-left {
+    left: 12%;
+}
+
+
+
+#reviews .dots {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+}
+
+#reviews .dots > .left, #reviews .dots > .right {
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    margin: 5px;
+}
+
+#reviews .dots > .left {
+    background-color: #f52424;
+}
+
+#reviews .dots > .right {
+    background-color: #E7E7E7;
+}
+
+#certifications {
+    padding: 30px 0 100px 0;
+}
+
+#certifications .logos {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 70px;
+}
+
+footer {
+    position: relative;
+}
+
+footer:after {
+    content: "";
+    position: absolute;
+    top: -27px;
+    height: 27px;
+    width: 100%;
+    background: #f52424;
+    left: 0;
+}
+
+#contact {
+    background: url(https://packoutco.com/wp-content/themes/packoutco/assets/images/footer-bg.jpg) no-repeat center top;
+    padding: 80px 0px;
+    background-size: cover;
+}
+
+#contact .form-wrapper {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+#contact-form {
+    display: flex;
+    flex-direction: column;
+}
+
+#contact-form > div {
+    display: flex;
+    gap: 15px;
+}
+
+#name-input,
+#contact-input {
+    width: 50%;
+}
+
+#contact input, 
+#contact textarea {
+    padding: 20px 10px;
+    margin-bottom: 15px;
+    resize: none;
+    font-size: 16px;
+    color:#f5efef;
+    background-color: #444444;
+    border: 3px solid transparent;
+    outline: none;
+}
+
+#contact input:focus, 
+#contact textarea:focus {
+    border: 3px solid #f52424;
+}
+
+#contact input[type=submit] {
+    width: 100px;
+    background-color: #f52424;
+    align-self: flex-end;
+    margin-top: 10px;
+}
+
+.side-info {
+    margin-left: 30px;
+}
+
+.side-info h3 {
+    font-size: 30px;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 5px;
+    margin-top: 0;
+}
+
+.side-info p {
+    color: #fff;
+    opacity: 0.8;
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.side-info > div {
+    display: flex;
+    gap: 20px;
+}
+
+.side-info > div > i {
+    font-size: 2rem;
+    color:#f52424;
+}
+
+.side-info a {
+    color: #fff;
+    opacity: 0.8;
+    font-size: 26px;
+    text-decoration: underline;
+}
+
+#links {
+    background: #292929;
+    padding: 40px 0px;
+}
+
+#links > .wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+} 
+
+#links h3 {
+    color: #fff;
+    font-size: 1.5rem;
+    margin-left: 10px;
+}
+
+.link-lists {
+    display: flex;
+}
+
+.link-lists > div {
+    display: flex;
+    flex-direction: column;
+    margin: 0 50px 0 100px;
+}
+
+#links a {
+    text-decoration: none;
+    color: #666769;
+    transition: all 0.3s ease;
+}
+
+#links a:hover {
+    color: #fff;
+    transform: translate(5px, 0);
+}
+
+#links img {
+    width: 125px;
+    height: 124px;
+    border: 3px solid #9b9da1;
+}
+
+#copyright {
+    background-color: #343434;
+}
+
+#copyright > .wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#copyright p {
+    color: #868686;
+}
+
+.social-links > i {
+    font-size: 1.8rem;
+    margin: 10px 5px;
+    color: #58595B;
+    transition: all 0.3s ease;
+}
+
+.social-links > i:hover {
+    cursor: pointer;
+    color:#f52424
+}
+
+
+
+
+
+
+
+

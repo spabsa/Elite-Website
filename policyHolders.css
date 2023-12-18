@@ -1,0 +1,137 @@
+nav i {
+    color:#ffffff;
+    font-size: 1.4rem;
+}
+
+#policyHolders .wrapper {
+    margin: 150px auto 100px auto;
+    background-color: #fff;
+    padding: 50px;
+    max-width: 1200px;
+    box-shadow: 0px 3px 21px #00000012;
+}
+
+#policyHolders .wrapper > p {
+    font-size: 25px;
+    line-height: 37px;
+}
+
+.wip-wrapper {
+    position: relative;
+    margin: 30px 0 40px 0;
+    padding: 0 40px;
+}
+
+.photo-wrapper {
+    overflow: hidden;
+    width: 1020px;
+}
+
+.nav-btns {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    left: 10px;
+    right: 10px;
+    top: 0;
+    bottom: 0;
+    align-items: center;
+}
+
+.nav-btns .left,
+.nav-btns .right {
+    width: 52px;
+    height: 52px;
+    background-color: #fff;
+    box-shadow: 0px 1px 8px 0px rgba(0, 0, 0, 0.4);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #494848;
+    transition: all 0.3s ease;
+}
+
+.nav-btns .left:hover,
+.nav-btns .right:hover {
+    background-color: #f52424;
+    cursor: pointer;
+}
+
+.wip-photos {
+    display: flex;
+    width: 2750.63px;
+    gap: 12px;
+
+}
+
+.wip-photos .photo {
+    Width: 333.33px;
+    height: 200px;
+}
+
+.photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.important-info  {
+    margin-bottom: 50px;
+}
+
+.important-info > p {
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+h3 {
+    font-weight: bold;
+    font-size: 35px;
+    margin: 40px 0 20px 0; 
+    color: #636060;
+}
+
+#policyHolders form {
+    display: flex;
+    flex-direction: column;
+}
+
+form .col-wrapper,
+.col-wrapper div {
+    display: flex;
+}
+
+form .col-wrapper {
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.col-wrapper div {
+    flex-direction: column;
+    width: 50%;
+}
+
+form input,
+form textarea {
+    padding: 20px 10px;
+    margin-bottom: 30px;
+    resize: none;
+    font-size: 16px;
+    color:#4d4b4b;
+    background-color: #ececec;
+    border: 3px solid transparent;
+    outline: none;
+}
+
+form input:focus {
+    border: 3px solid #f52424;
+}
+
+input[type=submit] {
+    width: 20%;
+    background-color: #f52424;
+    align-self: flex-end;
+    margin: 0 auto;
+    color: #fff;
+}
